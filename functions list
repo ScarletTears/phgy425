@@ -1,0 +1,13 @@
+autoThres(vm)	Compute threshold using 5signma
+filter_data(data,fs,fc)	Band-passs filter; input data, sampling rate (optional cutoff frequencies -- default 300-3k Hz)
+
+get_isi(spiketimes,bins)	Compute ISI sequence from spiketimes; input bins to plot histogram
+get_psth(neurons)	Plot PSTH from neurons
+get_spikes(neuron,thres)	Return spiketimes for given neuron (optional threshold -- default autoThres)
+
+load_files	load data files into files.mat
+load_structure	load data into structure
+
+plot_trains(neuron)	plot spikes, bursts, isolated, events for given neuron
+
+spikeAnalysis(spiketimes)	return [burst,isolated,event] for given spiketrain
